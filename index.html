@@ -1,9 +1,31 @@
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <title>タイトル</title>
-  </head>
-  <body>
-    jihyou.
-  </body>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AR年賀状「風」</title>
+  <!-- Import the component -->
+<script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+></script>
+<script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+></script>
+</head>
+<body>
+    <model-viewer
+      reveal="manual"
+      src="./nakami.gltf"
+      ios-src="./nakami.usdz" 
+      style="width:360px;height:555px;" 
+      auto-rotate
+      camera-controls
+      exposure= 1 
+      ar
+      shadow-intensity= 1 
+    >
+    </model-viewer>
+</body>
 </html>
